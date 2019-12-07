@@ -19,8 +19,8 @@ void sl_destroy(StringList *pSl)
     free(pSl->data);
     pSl->data = NULL;
     //Free StringList pointer itself
-    pSl = NULL;
     free(pSl);
+    pSl = NULL;
 }
 void sl_remove(StringList *pSl, size_t const index)
 {
